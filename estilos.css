@@ -14,11 +14,7 @@ body{
     color: white;
   }
 
-#sendDiv {
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-  }
+
   .divlogo{
     padding-top: 50px;
     text-align: center;
@@ -60,12 +56,7 @@ body{
     
   }
 
-.marcoForm {
-    border-radius: 15px;
-    border: 2px solid #3898EC;
-    padding: 15px;
-    width: 100%;
-  }
+
 
 
   h2{

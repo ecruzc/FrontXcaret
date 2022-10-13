@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+
+    align-items: center;
+    justify-content: center;
+    background: black;
+    font-family: sans-serif;
+    color: white;
+  }
+
+#sendDiv {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+.button {
+    background-color: #3898EC;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+.buttonSend {
+    background-color: #3898EC;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .buttonSend:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    
+  }
+
+.marcoForm2 {
+    border-radius: 15px;
+    border: 2px solid #3898EC;
+    padding: 20px;
+  padding: 100px;
+  }
+  .marcoForm {
+    border-radius: 15px;
+    border: 2px solid #3898EC;
+    padding: 20px;
+  
+  }
+  .form{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    
+    box-sizing: border-box;
+
+}
+.form input{
+    
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+    align-items: center;
+}
+.form .lbl-dato{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form .lbl-dato:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #3ee724;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.texto-dato{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form input:focus + .lbl-dato .texto-dato,.form input:valid + .lbl-dato .texto-dato{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #3ee724;
+}
+.form input:focus + .lbl-dato:after, .form input:valid + .lbl-dato:after{
+    transform: translateX(0%);
+}
+
+.contenedor{
+
+   
+    align-items: center;
+    align-content: center;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}

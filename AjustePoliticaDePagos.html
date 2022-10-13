@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Politica de Pago.</title>
+
+    <link rel="stylesheet" href="estilos3.css">
+	<link rel="stylesheet" href="estilos2.css">
+    <link rel="stylesheet" href="estilos.css">
+
+   
+</head>
+
+
+
+<body>
+<!--Logo y navbar-->
+
+<div >
+    <hr style="color:rgb(248, 219, 5) ;">
+    <table>
+        <tr>
+
+            <th>    
+
+                    <img style="width: 175px; height: 225px; padding-top: 40px;" src="logoXcaret.jpeg">
+
+                
+            </th>
+            <th>
+
+                    <h2 class="border">CARET</h2>
+                    <h2 class="olaXcaret">CARET</h2>
+
+
+            </th>
+            <th>
+                <br>
+                <br>
+                <br>
+                <br>
+
+             
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li><a href="interACTICO.html">Inicio</a></li>
+                        <li><a href="CalcularPago.html">Calcular Pago de Promotor</a>
+                            <ul class="submenu">
+                                <li><a href="#">Calcular</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Políticas de Pagos</a>
+                            <ul class="submenu">
+                                <li><a href="#">Ajustar</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </th>
+        </tr>
+    </table>
+    <hr style="color:rgb(247, 6, 210) ;">
+    <br>
+</div>
+
+</div>
+<!--Logo y navbar-->
+
+
+    <br>
+    <br>
+    <br>
+<div class=" contenedor">
+
+
+<form id="EnvDato" class="marcoForm2" action="" method="post">
+    <div class="form">
+        <b><h3 style="color:#3898EC ;">Ajuste a Políticas de Pago.</h3></b>
+    </div>
+    
+    <br>
+    <div class="form">
+   
+        <input type="text" required>
+        <label class="lbl-dato">
+            <span class="texto-dato">Compras minimas.</span>
+        </label>
+    </div>
+  
+<br>
+        <div class="form">
+        
+            <input type="text" required>
+            <label class="lbl-dato">
+                <span class="texto-dato">Compras maximas</span>
+            </label>
+        </div>
+
+<br>
+
+    <div class="form">
+        <input type="text" required>
+        <label class="lbl-dato">
+        <span class="texto-dato">Montos minimos</span>
+        </label>
+
+    </div>
+<br>
+
+    <div class="form">
+        <input type="text" required>
+        <label class="lbl-dato">
+        <span class="texto-dato">Montos maximos</span>
+        </label>
+
+    </div>
+    <br>
+
+    <div class="form">
+        <input type="text" required>
+        <label class="lbl-dato">
+        <span class="texto-dato">Porcentaje Retención</span>
+        </label>
+
+    </div>
+    <br>
+
+    <div class="form">
+        <input type="text" required>
+        <label class="lbl-dato">
+        <span class="texto-dato">Número de Días</span>
+        </label>
+
+    </div>
+    <br>
+
+    <div class="form">
+        <input type="text" required>
+        <label class="lbl-dato">
+        <span class="texto-dato">Paquetes Corporativos</span>
+        </label>
+
+    </div>
+    <!--
+    <div id="sendDiv">
+        <input id="btnSend" type="submit" class="buttonSend" value="Enviar" onclick=""/>
+      </div> -->
+      <!--Boton-->
+    <div class="boton-modal">
+        <label for="btn-modal" onclick="">
+            Actualizar
+        </label>
+    </div>
+<!--Fin de Boton-->
+
+
+</form>
+</div>
+
+<!--Ventana Modal-->
+<input type="checkbox" id="btn-modal">
+<div class="container-modal">
+    <div class="content-modal">
+        <b>
+            <h4 style="color: #77f523;">¡Actualizado!</h4>
+        </b>
+        
+        <p style="color:#3898EC;">Los cambios se realizaron con éxito.</p>
+        <div class="btn-cerrar">
+            <label for="btn-modal">Cerrar</label>
+        </div>
+    </div>
+    <label for="btn-modal" class="cerrar-modal"></label>
+</div>
+<!--Fin de Ventana Modal-->
+
+
+</body>
+</html>
