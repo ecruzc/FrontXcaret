@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Calcular Pago de Promotor</title>
 
+    <link rel="stylesheet" href="estilos3.css">
 	<link rel="stylesheet" href="estilos2.css">
     <link rel="stylesheet" href="estilos.css">
 
@@ -16,52 +17,63 @@
 <body>
 <!--Logo y navbar-->
 
-<div >
+<div style="padding: 0%; margin: 0%;">
+    <!--
     <hr style="color:rgb(248, 219, 5) ;">
-    <table>
+    -->
+    <table style="padding-top:0% ; margin: 0;">
+        <div class="image">
+            <img style="width: 150px; height: 175px; padding-top: 40px;" src="LOGOXCARET.png">
+        </div>
+        <div class="caret">
+            <h2 class="border">CARET</h2>
+            <h2 class="olaXcaret">CARET</h2>
+        </div>
         <tr>
 
-            <th>    
+            <!-- <th>    
 
-                    <img style="width: 175px; height: 225px; padding-top: 40px;" src="logoXcaret.jpeg">
+                    <img style="width: 150px; height: 175px; padding-top: 40px;" src="LOGOXCARET.png">
 
                 
-            </th>
-            <th>
+            </th> -->
+            <!-- <th>
 
                     <h2 class="border">CARET</h2>
                     <h2 class="olaXcaret">CARET</h2>
 
 
-            </th>
+            </th> -->
             <th>
-                <br>
-                <br>
-                <br>
-                <br>
+                <div class="navstyle">
 
-             
                 <nav class="navegacion">
                     <ul class="menu">
                         <li><a href="interACTICO.html">Inicio</a></li>
-                        <li><a href="CalcularPago.html">Calcular Pago de Promotor</a>
+                        <li><a href="#">Calcular Pago de Promotor</a>
                             <ul class="submenu">
-                                <li><a href="#">Calcular</a></li>
+                                <li><a href="CalcularPago.html">Calcular</a></li>
+
                             </ul>
                         </li>
                         <li><a href="#">Políticas de Pagos</a>
                             <ul class="submenu">
                                 <li><a href="AjustePoliticaDePagos.html">Ajustar</a></li>
+
                             </ul>
                         </li>
                     </ul>
                 </nav>
+                </div>
             </th>
         </tr>
     </table>
-    <hr style="color:rgb(247, 6, 210) ;">
+
     <br>
 </div>
+<hr style="color:rgb(247, 6, 210) ;">
+<br>
+<br>
 
 </div>
 <!--Logo y navbar-->
@@ -75,14 +87,14 @@
 
 <form id="EnvDato" class="marcoForm" action="" method="post">
     <div class="form">
-        <b><h3 style="color:#3898EC ;">Calcular Pago de Promotor.</h3></b>
+        <b><h3 style="color:#7d7 ;">Calcular Pago de Promotor.</h3></b>
     </div>
     
     <br>
     <div class="form">
    
         <input type="text" required>
-        <label class="lbl-dato">
+        <label class="lbl-dato"> 
             <span class="texto-dato">ID Promotor</span>
         </label>
     </div>
@@ -92,34 +104,60 @@
         
             <input type="text" required>
             <label class="lbl-dato">
-                <span class="texto-dato">Ventas</span>
+                <span class="texto-dato">Meta de venta</span>
             </label>
         </div>
 
 <br>
+<p>Venta especial.</p>
+<div class="swtich-container">
+    
+    <input type="checkbox" id="switch" >
+    <label for="switch" class="lbl" ></label>
+  </div>
 
-    <div class="form">
-        <input type="text" required>
-        <label class="lbl-dato">
-        <span class="texto-dato">Monto</span>
-        </label>
 
-    </div>
-<br>
-
-    <div class="form">
-        <input type="text" required>
-        <label class="lbl-dato">
-        <span class="texto-dato">Paquetes</span>
-        </label>
-
-    </div>
-    <div id="sendDiv">
-        <input id="btnSend" type="submit" class="buttonSend" value="Enviar" onclick=""/>
+  <!--  <div id="sendDiv">
+        <input id="btnSend" type="submit" class="buttonSend" value="Calcular" onclick=""/>
       </div>
+    -->
+          <!--Boton-->
+          <div class="boton-modal">
+            <label for="btn-modal" onclick="">
+                Calcular
+            </label>
+        </div>
+    <!--Fin de Boton-->
+
+    <!--Ventana Modal-->
+<input type="checkbox" id="btn-modal">
+<div class="container-modal">
+    <div class="content-modal">
+        <b>
+            <h4 style="color: black; text-align: center;">Cálculo pago del promotor</h4>
+        </b>
+        <br>
+        
+        <p style="color:black;">ID Promotor:</p>
+        <p style="color:black;">% Comisión:</p>
+        <p style="color:black; ">Recomendación:</p>
+        <div class="btn-cerrar">
+            <label for="btn-modal">Cerrar</label>
+        </div>
+    </div>
+    <label for="btn-modal" class="cerrar-modal"></label>
+</div>
+<!--Fin de Ventana Modal-->
 
 </form>
 </div>
+<br>
+<br>
+<br>
+<br>
+<hr style="color:rgb(248, 219, 5) ; width: 100%;">
+<br>
+<br>
 
 
 
