@@ -16,54 +16,63 @@
 
 <body>
 <!--Logo y navbar-->
-
-<div >
+<div style="padding: 0%; margin: 0%;">
+    <!--
     <hr style="color:rgb(248, 219, 5) ;">
-    <table>
+    -->
+    <table style="padding-top:0% ; margin: 0;">
+        <div class="image">
+            <img style="width: 150px; height: 175px; padding-top: 40px;" src="LOGOXCARET.png">
+        </div>
+        <div class="caret">
+            <h2 class="border">CARET</h2>
+            <h2 class="olaXcaret">CARET</h2>
+        </div>
         <tr>
 
-            <th>    
+            <!-- <th>    
 
-                    <img style="width: 175px; height: 225px; padding-top: 40px;" src="logoXcaret.jpeg">
+                    <img style="width: 150px; height: 175px; padding-top: 40px;" src="LOGOXCARET.png">
 
                 
-            </th>
-            <th>
+            </th> -->
+            <!-- <th>
 
                     <h2 class="border">CARET</h2>
                     <h2 class="olaXcaret">CARET</h2>
 
 
-            </th>
+            </th> -->
             <th>
-                <br>
-                <br>
-                <br>
-                <br>
+                <div class="navstyle">
 
-             
                 <nav class="navegacion">
                     <ul class="menu">
                         <li><a href="interACTICO.html">Inicio</a></li>
-                        <li><a href="CalcularPago.html">Calcular Pago de Promotor</a>
+                        <li><a href="#">Calcular Pago de Promotor</a>
                             <ul class="submenu">
-                                <li><a href="#">Calcular</a></li>
+                                <li><a href="CalcularPago.html">Calcular</a></li>
+
                             </ul>
                         </li>
                         <li><a href="#">Políticas de Pagos</a>
                             <ul class="submenu">
-                                <li><a href="#">Ajustar</a></li>
+                                <li><a href="AjustePoliticaDePagos.html">Ajustar</a></li>
 
                             </ul>
                         </li>
                     </ul>
                 </nav>
+                </div>
             </th>
         </tr>
     </table>
-    <hr style="color:rgb(247, 6, 210) ;">
+
     <br>
 </div>
+<hr style="color:rgb(247, 6, 210) ;">
+<br>
+<br>
 
 </div>
 <!--Logo y navbar-->
@@ -76,16 +85,24 @@
 
 
 <form id="EnvDato" class="marcoForm2" action="" method="post">
-    <div class="form">
-        <b><h3 style="color:#3898EC ;">Ajuste a Políticas de Pago.</h3></b>
-    </div>
     
+    <div class="form">
+        <b><h3 style="color:#7d7 ;">Ajuste a Políticas de Pago.</h3></b>
+    </div>
     <br>
     <div class="form">
    
         <input type="text" required>
         <label class="lbl-dato">
-            <span class="texto-dato">Compras minimas.</span>
+            <span class="texto-dato">ID Promotor</span>
+        </label>
+    </div>
+    <br>
+    <div class="form">
+   
+        <input type="text" required>
+        <label class="lbl-dato">
+            <span class="texto-dato">%Base</span>
         </label>
     </div>
   
@@ -94,7 +111,15 @@
         
             <input type="text" required>
             <label class="lbl-dato">
-                <span class="texto-dato">Compras maximas</span>
+                <span class="texto-dato">Meta de Ventas</span>
+            </label>
+        </div>
+<br>
+        <div class="form">
+        
+            <input type="text" required>
+            <label class="lbl-dato">
+                <span class="texto-dato">% Meta de Ventas</span>
             </label>
         </div>
 
@@ -103,46 +128,12 @@
     <div class="form">
         <input type="text" required>
         <label class="lbl-dato">
-        <span class="texto-dato">Montos minimos</span>
+        <span class="texto-dato">% Bonificación Venta Especial</span>
         </label>
 
     </div>
 <br>
 
-    <div class="form">
-        <input type="text" required>
-        <label class="lbl-dato">
-        <span class="texto-dato">Montos maximos</span>
-        </label>
-
-    </div>
-    <br>
-
-    <div class="form">
-        <input type="text" required>
-        <label class="lbl-dato">
-        <span class="texto-dato">Porcentaje Retención</span>
-        </label>
-
-    </div>
-    <br>
-
-    <div class="form">
-        <input type="text" required>
-        <label class="lbl-dato">
-        <span class="texto-dato">Número de Días</span>
-        </label>
-
-    </div>
-    <br>
-
-    <div class="form">
-        <input type="text" required>
-        <label class="lbl-dato">
-        <span class="texto-dato">Paquetes Corporativos</span>
-        </label>
-
-    </div>
     <!--
     <div id="sendDiv">
         <input id="btnSend" type="submit" class="buttonSend" value="Enviar" onclick=""/>
@@ -164,10 +155,10 @@
 <div class="container-modal">
     <div class="content-modal">
         <b>
-            <h4 style="color: #77f523;">¡Actualizado!</h4>
+            <h4 style="color: black;">¡Actualizado!</h4>
         </b>
         
-        <p style="color:#3898EC;">Los cambios se realizaron con éxito.</p>
+        <p style="color:black;">Los cambios se realizaron con éxito.</p>
         <div class="btn-cerrar">
             <label for="btn-modal">Cerrar</label>
         </div>
@@ -175,7 +166,10 @@
     <label for="btn-modal" class="cerrar-modal"></label>
 </div>
 <!--Fin de Ventana Modal-->
-
-
+<br>
+<br>
+<hr style="color:rgb(248, 219, 5) ;">
+<br>
+<br>
 </body>
 </html>
