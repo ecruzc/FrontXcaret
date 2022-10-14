@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Calcular Pago de Promotor</title>
 
+    <link rel="stylesheet" href="estilos3.css">
 	<link rel="stylesheet" href="estilos2.css">
     <link rel="stylesheet" href="estilos.css">
 
@@ -75,7 +76,7 @@
 
 <form id="EnvDato" class="marcoForm" action="" method="post">
     <div class="form">
-        <b><h3 style="color:#3898EC ;">Calcular Pago de Promotor.</h3></b>
+        <b><h3 style="color:#7d7 ;">Calcular Pago de Promotor.</h3></b>
     </div>
     
     <br>
@@ -92,34 +93,60 @@
         
             <input type="text" required>
             <label class="lbl-dato">
-                <span class="texto-dato">Ventas</span>
+                <span class="texto-dato">Meta de venta</span>
             </label>
         </div>
 
 <br>
+<p>Venta especial.</p>
+<div class="swtich-container">
+    
+    <input type="checkbox" id="switch" >
+    <label for="switch" class="lbl" ></label>
+  </div>
 
-    <div class="form">
-        <input type="text" required>
-        <label class="lbl-dato">
-        <span class="texto-dato">Monto</span>
-        </label>
 
-    </div>
-<br>
-
-    <div class="form">
-        <input type="text" required>
-        <label class="lbl-dato">
-        <span class="texto-dato">Paquetes</span>
-        </label>
-
-    </div>
-    <div id="sendDiv">
-        <input id="btnSend" type="submit" class="buttonSend" value="Enviar" onclick=""/>
+  <!--  <div id="sendDiv">
+        <input id="btnSend" type="submit" class="buttonSend" value="Calcular" onclick=""/>
       </div>
+    -->
+          <!--Boton-->
+          <div class="boton-modal">
+            <label for="btn-modal" onclick="">
+                Calcular
+            </label>
+        </div>
+    <!--Fin de Boton-->
+
+    <!--Ventana Modal-->
+<input type="checkbox" id="btn-modal">
+<div class="container-modal">
+    <div class="content-modal">
+        <b>
+            <h4 style="color: black; text-align: center;">Cálculo pago del promotor</h4>
+        </b>
+        <br>
+        
+        <p style="color:black;">ID Promotor:</p>
+        <p style="color:black;">% Comisión:</p>
+        <p style="color:black; ">Recomendación:</p>
+        <div class="btn-cerrar">
+            <label for="btn-modal">Cerrar</label>
+        </div>
+    </div>
+    <label for="btn-modal" class="cerrar-modal"></label>
+</div>
+<!--Fin de Ventana Modal-->
 
 </form>
 </div>
+<br>
+<br>
+<br>
+<br>
+<hr style="color:rgb(248, 219, 5) ; width: 100%;">
+<br>
+<br>
 
 
 
