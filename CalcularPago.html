@@ -15,7 +15,9 @@
 
 
 <body>
+   <script src="main.js"></script>
 <!--Logo y navbar-->
+<div style="overflow: hidden;">
 
 <div style="padding: 0%; margin: 0%;">
     <!--
@@ -31,19 +33,6 @@
         </div>
         <tr>
 
-            <!-- <th>    
-
-                    <img style="width: 150px; height: 175px; padding-top: 40px;" src="LOGOXCARET.png">
-
-                
-            </th> -->
-            <!-- <th>
-
-                    <h2 class="border">CARET</h2>
-                    <h2 class="olaXcaret">CARET</h2>
-
-
-            </th> -->
             <th>
                 <div class="navstyle">
 
@@ -66,8 +55,16 @@
                 </nav>
                 </div>
             </th>
+
+            <th>
+                <div class="logo2">
+                <img style="width: 250px; height: 140px; padding-top: 40px;"  src="LOGOXCARET2.png">
+                </div>
+            </th>
         </tr>
     </table>
+
+    <br>
 
     <br>
 </div>
@@ -94,7 +91,7 @@
     <div class="form">
    
         <input type="text" required>
-        <label class="lbl-dato"> 
+        <label class="lbl-dato" id="idpromotor"> 
             <span class="texto-dato">ID Promotor</span>
         </label>
     </div>
@@ -102,7 +99,7 @@
 <br>
         <div class="form">
         
-            <input type="text" required>
+            <input type="text" required id="metaventa">
             <label class="lbl-dato">
                 <span class="texto-dato">Meta de venta</span>
             </label>
@@ -123,7 +120,7 @@
     -->
           <!--Boton-->
           <div class="boton-modal">
-            <label for="btn-modal" onclick="">
+            <label for="btn-modal" onclick="getCompensation()">
                 Calcular
             </label>
         </div>
@@ -132,14 +129,16 @@
     <!--Ventana Modal-->
 <input type="checkbox" id="btn-modal">
 <div class="container-modal">
-    <div class="content-modal">
+    <div class="content-modal" id="modPago">
         <b>
             <h4 style="color: black; text-align: center;">Cálculo pago del promotor</h4>
         </b>
         <br>
         
         <p style="color:black;">ID Promotor:</p>
+
         <p style="color:black;">% Comisión:</p>
+    
         <p style="color:black; ">Recomendación:</p>
         <div class="btn-cerrar">
             <label for="btn-modal">Cerrar</label>
@@ -155,12 +154,14 @@
 <br>
 <br>
 <br>
-<hr style="color:rgb(248, 219, 5) ; width: 100%;">
+
+
+<div class="banner1">
+    <h1>&nbsp</h1>
+ </div>
 <br>
 <br>
-
-
-
+</div>
 
 </body>
 </html>
